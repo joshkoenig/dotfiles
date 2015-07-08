@@ -2,7 +2,8 @@
 if [ -e "/etc/profile" ]; then
     source /etc/profile
 fi
-
+[ "$PATH" == "${PATH/$HOME/}" ] && export PATH="$HOME/bin:$PATH"
+[ "$PATH" == "${PATH/.composer/}" ] && export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Source global definitions
 if [ -f /etc/bashrc ]; then
     . /etc/bashrc
@@ -23,3 +24,11 @@ for rc in `ls ~/.bash.d`; do
     source ~/.bash.d/$rc
 done
 
+
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# added by travis gem
+[ -f /Users/joshk/.travis/travis.sh ] && source /Users/joshk/.travis/travis.sh
+export NODE_PATH=/usr/local/lib/node:/usr/local/lib/node_modules

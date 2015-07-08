@@ -1,3 +1,3 @@
 export BLOCKSIZE=k
-export EDITOR=vim
+export EDITOR=nano
 export PAGER=less
