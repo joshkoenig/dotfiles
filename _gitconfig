@@ -1,6 +1,6 @@
 [user]
-        name = Josh Koenig
-        email = josh@getpantheon.com
+    name = Josh Koenig
+    email = josh@getpantheon.com
 [color]
     # Use colors in Git commands that are capable of colored output when outputting to the terminal
     ui = auto
@@ -12,3 +12,8 @@
     added = yellow
     changed = green
     untracked = cyan
+[github]
+    user = joshkoenig
+[alias]
+    prettylog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	up = "!git remote update -p; git merge --ff-only @{u}"
