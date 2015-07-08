@@ -1,2 +1,4 @@
 # Joe's dotfile magic
+# Forkzored: https://github.com/joshkoenig/dotfiles
+# We use only .bashrc so as to prevent getting lost in the wheels of confusion. 
 source ~/.bashrc

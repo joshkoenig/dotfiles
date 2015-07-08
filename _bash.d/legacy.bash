@@ -4,9 +4,6 @@ PATH="/Developer/usr/bin:/Developer/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr
 
 . ~/.git_completion.sh
 
-source ~/.megalodon.profile
-source ~/.bashrc
-
 # Local cpan
 eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
 
