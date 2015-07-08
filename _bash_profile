@@ -1,5 +1,2 @@
 # Joe's dotfile magic
 source ~/.bashrc
-
-# added by Anaconda 1.9.0 installer
-export PATH="/Users/joe/anaconda/bin:$PATH"

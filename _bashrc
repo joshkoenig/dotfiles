@@ -18,12 +18,3 @@ fi
 if [ -r /usr/local/bin/bashmarks.sh ]; then
     . /usr/local/bin/bashmarks.sh
 fi
-
-### source all the various stuff others have dropped in
-for rc in `ls ~/.bash.d`; do
-    source ~/.bash.d/$rc
-done
-
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
